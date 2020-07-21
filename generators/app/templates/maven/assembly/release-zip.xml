@@ -1,0 +1,24 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+    <id>release-zip</id>
+
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <useDefaultExcludes>false</useDefaultExcludes>
+            <includes>
+                <include>target/lambda.zip</include>
+                <include>serverless.yml</include>
+                <include>serverless/**</include>
+                <include>package.json</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+</assembly>

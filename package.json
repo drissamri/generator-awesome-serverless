@@ -1,0 +1,34 @@
+{
+  "name": "generator-awesome-serverless",
+  "version": "1.0.0",
+  "description": "Awesome Serverless project generator",
+  "private": false,
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "4.11.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-xo-space": "0.25.0",
+    "jest": "26.1.0",
+    "jest-cli": "26.1.0",
+    "yeoman-assert": "3.1.1",
+    "yeoman-test": "2.7.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "scripts": {
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  }
+}
